@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<matches>
+
+    <match name="Brawl">
+
+        <description>A simple deathmatch; the player/team that causes the most pain wins! Fun for any number of players and teams.</description>
+
+        <basics>
+
+            <score>600</score>
+            <length>10000</length>
+            <powerupSpawnInterval>20</powerupSpawnInterval>
+            <waitForPowerupCollection>false</waitForPowerupCollection>
+            <regenInterval>30</regenInterval>
+            <momentumDamp>1.0</momentumDamp>
+            <enemiesArePeopleToo>false</enemiesArePeopleToo>
+
+        </basics>
+
+        <pain importance="0.5"></pain>
+
+    </match>
+
+    <match name="Race">
+
+        <description>Best with two teams of two players each. Race to the waypoints and capture them before the other teams do! Be careful: all players on the team must be touching a waypoint to capture it!</description>
+
+        <basics>
+
+            <score>12</score>
+            <length>100000</length>
+            <powerupSpawnInterval>90</powerupSpawnInterval>
+            <waitforPowerupCollection>true</waitforPowerupCollection>
+            <regenInterval>30</regenInterval>
+            <momentumDamp>0.4</momentumDamp>
+            <enemiesArePeopleToo>false</enemiesArePeopleToo>
+
+        </basics>
+
+        <waypoint importance="1">
+
+            <newWaypointDelay>10</newWaypointDelay>
+
+        </waypoint>
+
+    </match>
+
+    <match name="Capture the Flag">
+
+        <description>A simple game of Capture the Flag: defend your own flag while trying to steal the other teams' flags and get them back to your base! Hurt an enemy enough and they will drop the flag they're carrying. Touch your dropped flag to return it to your base.</description>
+
+        <basics>
+
+            <score>10</score>
+            <length>1000000</length>
+            <powerupSpawnInterval>10</powerupSpawnInterval>
+            <waitForPowerupCollection>true</waitForPowerupCollection>
+            <regenInterval>30</regenInterval>
+            <momentumDamp>0.6</momentumDamp>
+            <enemiesArePeopleToo>false</enemiesArePeopleToo>
+
+        </basics>
+
+        <ctf importance="1.0">
+
+            <homeToScore>false</homeToScore>
+            <carrySpeedScale>1.0</carrySpeedScale>
+            <carryStrengthScale>1.0</carryStrengthScale>
+            <droppedResetTime>25</droppedResetTime>
+            <painReceivedDrop>100</painReceivedDrop>
+            <flagRespawnDelay>0</flagRespawnDelay>
+            <touchToReturn>true</touchToReturn>
+
+        </ctf>
+
+    </match>
+
+    <match name="Deadly Hunt">
+
+        <description>Search for powerups, or attack other players! Either option gets you points.</description>
+
+        <basics>
+
+            <score>1000</score>
+            <length>1000000</length>
+            <powerupSpawnInterval>60</powerupSpawnInterval>
+            <waitForPowerupCollection>false</waitForPowerupCollection>
+            <regenInterval>30</regenInterval>
+            <momentumDamp>0.75</momentumDamp>
+            <enemiesArePeopleToo>false</enemiesArePeopleToo>
+
+        </basics>
+
+        <pain importance="0.5"></pain>
+
+        <powerup importance="50"></powerup>
+
+    </match>
+
+    <match name="Bullseye">
+
+        <description>THIS GAME-TYPE IS CURRENTLY BROKEN AND SHOULD NOT BE USED. Chase the Target and hurt him! Players get points by dealing damage to other players while being the Target. The Target changes every 30 seconds, choosing a new random player each time.</description>
+
+        <basics>
+
+            <score>1000</score>
+            <length>100000</length>
+            <powerupSpawnInterval>20</powerupSpawnInterval>
+            <regenInterval>30</regenInterval>
+            <momentumDamp>0.6</momentumDamp>
+            <enemiesArePeopleToo>false</enemiesArePeopleToo>
+
+        </basics>
+
+        <bullseye importance="1">
+
+            <nextTargetSelection>random</nextTargetSelection>
+            <targetChangeTime>30.0</targetChangeTime>
+            <targetChangePainDealt>100000.0</targetChangePainDealt>
+            <targetChangePainReceived>100000.0</targetChangePainReceived>
+
+        </bullseye>
+
+    </match>
+
+</matches>
